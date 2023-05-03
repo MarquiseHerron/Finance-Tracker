@@ -49,7 +49,7 @@ import 'package:flutter/cupertino.dart';
     DateTime today = DateTime.now();
     // This loop will start from sunday going forward!
     for( int i = 0; i<7; i++){
-      if(weekDay(today.add(Duration(days: i))) == 'Sunday'){
+      if(weekDay(today.subtract(Duration(days: i))) == 'Sunday'){
         FirstDay = today.subtract(Duration(days: i));
       }
     }
